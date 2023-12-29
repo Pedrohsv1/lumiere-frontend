@@ -1,5 +1,4 @@
 import { MontH3 } from '../texts/monteserrat/h3';
-import { MontInfo } from '../texts/monteserrat/info';
 import { MontP } from '../texts/monteserrat/p';
 import { Skeleton } from '../ui/skeleton';
 

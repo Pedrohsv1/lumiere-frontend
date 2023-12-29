@@ -1,6 +1,5 @@
 import { MontH3 } from '../../texts/monteserrat/h3';
 import { MontP } from '../../texts/monteserrat/p';
-import { ICardProps } from '../card.interface.ts';
 import { Rating } from 'react-simple-star-rating';
 import { ButtonYellow } from '../../buttons/button-yellow-icon/index.tsx';
 import { Categories } from '@/api/services/user/me/index.tsx';

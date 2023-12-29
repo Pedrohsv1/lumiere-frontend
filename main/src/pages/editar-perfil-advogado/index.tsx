@@ -26,7 +26,6 @@ export default function EditarPerfil() {
   const [areaatuacao, setAreaAtuacao] = useState('');
   const [isAdvogado, setisAdvogado] = useState(Boolean);
 
-  const [dataUser, setDataUser] = useState<Root | undefined>();
 
   const [responseError, setResponseError] = useState('');
   const [validationFormError, setValidationFormError] = useState<ErrorsForm>({
@@ -39,7 +38,6 @@ export default function EditarPerfil() {
   const mutateProfile = useMutation(Profile, {
     onSuccess: (data) => {
       console.log(data);
-      setDataUser(data);
       setName(data.nome);
       setEmail(data.email);
       setDecricao(data.historico);

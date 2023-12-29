@@ -1,13 +1,10 @@
 import { useState, useEffect } from 'react';
-import { Footer } from '../../components/footer';
 import axiosInstance from '../../api/axiosinstance';
 import { DisplayH1 } from '@/components/texts/display-sm/h1';
 import { LinhaCaso } from '@/components/cards/card-listar-caso';
 import { Button_blue } from '@/components/buttons/button-blue-icon';
 import { Menu } from '@/components/menu/menu';
-import { GetClient } from '@/api/services/clientes/get-user';
 import { useMutation } from 'react-query';
-import { Cliente } from '@/api/services/clientes/Cliente.interface';
 import { GetUser, User } from '@/api/services/user/me';
 
 interface PropsList {

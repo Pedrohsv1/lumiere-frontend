@@ -20,7 +20,6 @@ import { Button_blue } from '@/components/buttons/button-blue-icon';
 export const DetalhamentoCaso = () => {
   const { id } = useParams();
   const [caso, setCaso] = useState<Case | undefined>();
-  const [cliente, setCliente] = useState<any | undefined>();
 
   const [payments, setPayments] = useState<Payment[] | undefined>();
   const [meetings, setMeetings] = useState<GetMeets[] | undefined>();

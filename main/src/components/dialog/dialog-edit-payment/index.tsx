@@ -45,7 +45,7 @@ export const Dialog = ({ value, id, refetchPayment }: PropsDialog) => {
       setOpen(false);
       refetchPayment();
     },
-    onError: (err: ApiError) => {
+    onError: () => {
       setOpen(false);
     },
   });

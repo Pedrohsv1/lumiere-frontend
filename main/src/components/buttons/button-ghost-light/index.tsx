@@ -1,4 +1,3 @@
-import React from 'react';
 import { IButtonProps } from '../button.interface';
 export const Button_ghost_light = ({ size, title, type = 'button', func, className }: IButtonProps) => {
   const handClick = (e: any) => {

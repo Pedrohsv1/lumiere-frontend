@@ -4,19 +4,15 @@ import * as Yup from 'yup';
 import { ErrorsForm } from './caso.interface';
 import { useMutation } from 'react-query';
 import { createCaseSchema } from './caso.validation';
-import { MenuLogin } from '../../components/menu/menu-login';
-import { MenuNoLogin } from '../../components/menu/menu-no-login';
 import { DisplayH1 } from '../../components/texts/display-sm/h1';
 import { InputText } from '../../components/input/input-text';
 import { MontInfo } from '../../components/texts/monteserrat/info';
-import * as Toast from '@radix-ui/react-toast';
 import { useNavigate } from 'react-router-dom';
 import 'react-day-picker/dist/style.css';
 import { DayPicker } from 'react-day-picker';
 import 'react-day-picker/dist/style.css';
 import { ApiError } from '@/api/auth/singIninterface';
 import { createCase } from '@/api/services/cases/create-case';
-import { CreateCaseResponse } from '@/api/services/cases/create-case/criarCaso.interface';
 import { InputTextArea } from '@/components/input/input-area';
 import { Menu } from '@/components/menu/menu';
 
@@ -25,13 +21,13 @@ export default function CriarCaso() {
   const [descricao, setDescricao] = useState('');
   const [nomeCliente, setnomeCliente] = useState('');
   const timerRef = React.useRef(0);
-  const [open, setOpen] = React.useState(false);
+  const [, setOpen] = React.useState(false);
   const a = false;
   const navigate = useNavigate();
 
   const [selected, setSelected] = useState<Date>();
 
-  const [responseError, setResponseError] = useState('');
+  const [, setResponseError] = useState('');
   const [validationFormError, setValidationFormError] = useState<ErrorsForm>({
     titulo: '',
     descricao: '',
